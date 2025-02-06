@@ -1,7 +1,6 @@
 # Egg Salad Sandwich Recipe
 
-## Image
-![Egg Salad Sandwich](image/EggSaladSandwich.jpg)
+![Egg Salad Sandwich](img/egg_salad_sandwich.jpg)
 
 ## Description
 A **classic, creamy egg salad sandwich** with a perfect balance of flavors, combining **hard-boiled eggs, mayonnaise, mustard, and seasoning**. This simple yet delicious recipe creates a **rich, satisfying sandwich** perfect for any meal.

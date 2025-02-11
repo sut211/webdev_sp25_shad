@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- this specifies the character set encoding.
+     without this tag our fonts might not load properly -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Navbar</title>
+
+    <style type="text/CSS">
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+          'Lucida Sans Unicode', Geneva, Verdana;
+      }
+
+      header {
+        width: 100%;
+        background-color: rgb(255, 168, 242);
+      }
+
+      nav#main-nav ul {
+        
+        list-style-type: none;
+        overflow: hidden;
+        
+        font-size: 0;
+      }
+
+      #main-nav ul li {
+        display: inline-block;
+        font-size: 1rem;
+      }
+
+      li a {
+        display: block;
+        text-align: center;
+        width: 100px;
+        padding: 10px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+      }
+
+      li a:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>

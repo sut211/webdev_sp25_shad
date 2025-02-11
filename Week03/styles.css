@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    background-color: #f4c542;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: #f4c542;
+    padding: 10px;
+}
+
+.nav-item {
+    background-color: #e98b2a;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.sidebar {
+    background-color: #f9d6a3;
+    width: 25%;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.sidebar img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.ingredients, .instructions {
+    background-color: #f4c542;
+    width: 35%;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+footer {
+    background: #ddd;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #ff5733;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

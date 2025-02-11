@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Intro to CSS Text and Spans</title>
+    <!-- Load external stylesheets before internal style sheet overrides -->
+    <!-- Internal Stylesheet,
+     these styles defined here only apply to this html page-->
+
+    <style type="text/CSS">
+      * {
+        font-family: 'Arial', sans-serif;
+      }
+      
+      h1 {
+        font-family: 'Papyrus', fantasy;
+        color: darkred;
+      }
+
+      p {
+        font-size: 0.75rem;
+        font-family: 'Georgia', serif;
+        color: darkslategray;
+      }
+
+      .sillyText {
+        font-weight: 800;
+        color: #ff5733;
+        font-family: 'Impact', sans-serif;
+        text-decoration: underline;
+        text-transform: capitalize;
+      }
+
+      #mostImportantText {
+        margin: 5px 10px 15px 20px;
+        text-shadow: 3px 3px 5px blue;
+        border: 2px dashed rgba(255, 99, 71, 0.7);
+        padding: 1rem 2rem;
+        font-family: 'Lucida Console', Monaco, monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Reasons why Nic Cage is actually a great actor.</h1>
+    <p>Nicolas Cage has an Oscar.</p>
+    <p>
+      He makes about 8 movies a year.
+      <span class="sillyText"
+        >At least half of them are laughably watchable.</span
+      >
+    </p>
+
+    <h2 id="mostImportantText">He bought a stolen dinosaur egg.</h2>
+  </body>
+</html>

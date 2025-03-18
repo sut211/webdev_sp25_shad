@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CSS Only Modal</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <!-- INTERNAL STYLE SHEET -->
+        <style type="text/css">
+            * {
+                box-sizing: border-box;
+            }
+
+            /* Button/Link Stles*/
+            .button{
+                text-decoration: none;
+                color: white;
+                background-color: blueviolet;
+                padding: 1rem 2rem;
+                border-radius: 0.25rem;
+                margin: 1rem 2rem;
+            }
+
+            /* Modal Styles */
+            .info_modal{
+                /* strech background to cover entire screen */
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <a href="#info" class="button"> Link to Modal 1</a>
+        
+        <!-- parent wrapper div recieve the ID we target-->
+
+        <div>
+            <!-- A close button that is absolutely positioned-->
+             <a href="#close" class="close">X</a>
+
+             <!-- You can put whatever HTML you want in there-->
+              <h2>Title of Modal 1</h2>
+              <p>Hello! First Modal</p>
+
+        </div>
+    </body>
+</html>

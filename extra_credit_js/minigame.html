@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Find the Goldfish Game</title>
+  <style>
+    #fishTank {
+      width: 600px;
+      height: 400px;
+      background-color: #a3d5f7;
+      margin: 50px auto;
+      border: 5px solid #333;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .fish {
+      position: absolute;
+      cursor: pointer;
+      font-size: 2em;
+      user-select: none;
+      transition: transform 0.2s;
+    }
+
+    .fish:hover {
+      transform: scale(1.2);
+    }
+
+    .goldfish {
+      color: gold;
+      text-shadow: 1px 1px 2px #ffee00;
+    }
+
+    #message {
+      text-align: center;
+      font-size: 1.5em;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center;">Find the Goldfish</h1>
+  <p style="text-align: center;">Click on a fish to try and find the goldfish!</p>
+  <div id="fishTank"></div>
+  <div id="message"></div>
+
+  <script>
+    var totalFish = 8;
+    var goldfishIndex = Math.floor(Math.random() * totalFish);
+    var fishTank = document.getElementById("fishTank");
+    var message = document.getElementById("message");
+
+    function createFish(index) {
+      var fish = document.createElement("div");
+      fish.className = "fish";
+
+      fish.innerHTML = "🐟";
+
+      if (index === goldfishIndex) {
+        fish.className += " goldfish";
+      }
+
+      var x = Math.floor(Math.random() * (fishTank.offsetWidth - 50));
+      var y = Math.floor(Math.random() * (fishTank.offsetHeight - 50));
+      fish.style.left = x + "px";
+      fish.style.top = y + "px";
+
+
+      fish.onclick = function() {
+        if (index === goldfishIndex) {
+          message.innerHTML = "Congratulations! You found the goldfish!";
+          fish.innerHTML = "🏆🐟";
+        } else {
+          message.innerHTML = "Oops, not the goldfish. Try again!";
+          fish.style.opacity = "0.5";
+        }
+      };
+
+      fishTank.appendChild(fish);
+    }
+
+    for (var i = 0; i < totalFish; i++) {
+      createFish(i);
+    }
+  </script>
+</body>
+</html>

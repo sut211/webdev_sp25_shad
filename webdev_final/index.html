@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Goldfish Care</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">Goldfish<span style="color: var(--accent-blue);">.</span></div>
+    
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="types.html">Types</a></li>
+        <li><a href="care.html">Guide</a></li>
+        <li><a href="tank.html">Tank</a></li>
+        <li><a href="my-goldfish.html">My Fish</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+<!--hero section-->
+<main>
+  <!-- bg video -->
+  <video class="bg-video" autoplay loop muted playsinline>
+    <source src="images/goldfish_swim.mp4" type="video/mp4" />
+  </video>
+
+  <!-- cursor glow -->
+  <div class="hero-bg"></div>
+
+<!-- title -->
+<div class="hero-content">
+  <h1>Bringing Serenity to Your Aquarium</h1>
+  <p>Your one stop place for Goldfish caring and facts!</p>
+  <div class="btn-group">
+    <a class="btn primary" href="#about">Get Started</a>
+  </div>
+</div>
+
+</main>
+
+<!-- about page -->
+<section class="info-section" id="about">
+  <div class="container two-col">
+    <div class="col-text">
+      <h2 class="section-title">Why Happy Goldfish Matter</h2>
+      <p class="section-tagline">
+        Proper care isn't just kind, it's the secret to vibrant color, playful behavior,
+        and a tank that feels alive. Here's what makes the difference:
+      </p>
+
+      <p class="section-body">
+        Goldfish can thrive for more than a decade when given the right environment.
+        Crystal-clear water, balanced nutrition, and plenty of space reduce stress,
+        boost immune systems, and bring out their bright, natural colors!
+      </p>
+
+      <a class="btn primary" href="care.html">Learn Full Care Guide</a>
+    </div>
+
+    <!--goldfish img -->
+    <div class="col-image">
+      <img src="images/happy_goldfish.jpg"/>
+    </div>
+  </div>
+</section>
+
+<!-- fish essentials -->
+<section class="fish-section" id="essentials">
+  <div class="container fish-grid">
+
+    <!-- F -->
+    <article class="fish-card">
+      <h3 class="fish-header">
+        <span class="fish-letter">F</span>
+        <span class="fish-title">Filtration&nbsp;; Fresh Water</span>
+      </h3>
+      <p class="fish-body">
+        A quality filter and weekly water changes keep ammonia &amp; nitrites at 0 ppm — the #1 key to long-lived fish.
+      </p>
+      <figure class="fish-img">
+        <img src="images/filtration.jpg"/>
+      </figure>
+    </article>
+
+    <!-- I -->
+    <article class="fish-card">
+      <h3 class="fish-header">
+        <span class="fish-letter">I</span>
+        <span>Ideal&nbsp;Nutrition</span>
+      </h3>
+      <p class="fish-body">
+        Varied pellets, leafy greens, and the right portion size prevent swim-bladder issues and boost color.
+      </p>
+      <figure class="fish-img">
+        <img src="images/nutrition.jpg"/>
+      </figure>
+    </article>
+
+    <!-- S -->
+    <article class="fish-card">
+      <h3 class="fish-header">
+        <span class="fish-letter">S</span>
+        <span>Spacious&nbsp;Tank</span>
+      </h3>
+        Each goldfish needs 20 gal (plus 10 gal per extra fish) so tails spread wide and cruising stays stress-free.
+      </p>
+      <figure class="fish-img">
+        <img src="images/spacious.jpg"/>
+      </figure>
+    </article>
+
+    <!-- H -->
+    <article class="fish-card">
+      <h3 class="fish-header">
+        <span class="fish-letter">H</span>
+        <span>Health&nbsp;Monitoring</span>
+      </h3>
+      <p class="fish-body">
+        Daily two-minute checks for clear eyes, intact fins, and steady gills catch disease before it starts.
+      </p>
+      <figure class="fish-img">
+        <img src="images/health.jpg"/>
+      </figure>
+    </article>
+
+  </div>
+</section>
+
+<!-- explore fish page-->
+<section class="explore-section" id="explore">
+  <div class="glow-bg"></div>
+
+  <div class="explore-wrapper">
+    <h2 class="explore-heading">Explore All Goldfish!</h2>
+    <a class="explore-btn" href="types.html">Explore!</a>
+  </div>
+</section>
+
+
+<!--footer -->
+<footer class="site-footer">
+<div id="egg-overlay" hidden>
+  <button id="egg-close" aria-label="Close">x</button>
+  <iframe id="egg-frame" title="Goldfish minigame" loading="lazy"></iframe>
+</div>
+  <div class="footer-container">
+    <nav class="footer-nav">
+      <a href="#">FAQ</a>
+      <a href="#">Care Guide</a>
+      <a href="#">Contact</a>
+      <a href="#">Privacy&nbsp;Policy</a>
+    </nav>
+    <p class="footer-copy">
+      <span id="year"></span> Goldfish Care. 🐟
+    </p>
+  </div>
+</footer>
+
+
+<script src="js/egg.js"></script>
+
+
+  <!-- cursor -->
+  <script src="js/cursor-light.js"></script>
+
+  <!-- gsap scrolltrigger -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+  <!-- hero reveal -->
+  <script src="js/hero-reveal.js"></script>
+
+  
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+  
+    hamburger.addEventListener("click", () => {
+      navMenu.classList.toggle("show");
+    });
+  </script>
+  
+
+</body>
+</html>
+

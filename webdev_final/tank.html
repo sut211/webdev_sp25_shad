@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Goldfish Tank Setup 101</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/tank.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">Goldfish<span style="color: var(--accent-blue);">.</span></div>
+    
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="types.html">Types</a></li>
+        <li><a href="care.html">Guide</a></li>
+        <li><a href="tank.html">Tank</a></li>
+        <li><a href="my-goldfish.html">My Fish</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- hero -->
+  <section class="hero">
+    <h1>Goldfish Tank&nbsp;Setup<br><span>7 Simple Steps</span></h1>
+  </section>
+
+  <section class="steps">
+
+    <!-- step 1 -->
+    <article class="step">
+      <div class="step-img">
+        <img src="images/empty.jpeg">
+      </div>
+      <div class="step-text">
+        <h2><span class="num">1</span>Choose the Right Size</h2>
+        <p>A single fancy goldfish needs <strong>20&nbsp;gallons</strong>; add <strong>10&nbsp;gal</strong> for each extra fish. A roomy tank dilutes toxins and gives tails space to fan out.</p>
+      </div>
+    </article>
+
+    <!-- step 2 -->
+    <article class="step reverse">
+      <div class="step-img">
+        <img src="images/wash.jpg">
+      </div>
+      <div class="step-text">
+        <h2><span class="num">2</span>Rinse Gravel &amp; Decor</h2>
+        <p>Wash with lukewarm water only. Soap leaves residues that can burn gills. Swirl gravel until the water runs clear.</p>
+      </div>
+    </article>
+
+    <!-- step 3 -->
+    <article class="step">
+      <div class="step-img">
+        <img src="images/step3.jpg">
+      </div>
+      <div class="step-text">
+        <h2><span class="num">3</span>Install a Strong Filter</h2>
+        <p>Target a <strong>6-8x</strong> turnover of tank volume per hour. Slip a sponge on the intake so flowing fins don’t get sucked in.</p>
+      </div>
+    </article>
+
+    <!-- step 4 -->
+    <article class="step reverse">
+      <div class="step-img">
+        <img src="images/step4.jpg">
+      </div>
+      <div class="step-text">
+        <h2><span class="num">4</span>Add Water &amp; Conditioner</h2>
+        <p>Fill the tank, then dose a de-chlorinator that neutralises chlorine <em>and</em> chloramine. Aim for 68-74 °F (20-23 °C) for fancies.</p>
+      </div>
+    </article>
+
+    <!-- step 5 -->
+    <article class="step">
+      <div class="step-img">
+        <img src="images/step5.jpg">
+      </div>
+      <div class="step-text">
+        <h2><span class="num">5</span>Cycle the Tank</h2>
+        <p>Feed a pinch of food daily or add bottled bacteria. Wait until <strong>ammonia = 0</strong> and <strong>nitrite = 0 ppm</strong>—usually 2-3 weeks.</p>
+      </div>
+    </article>
+
+    <!-- step 6 -->
+    <article class="step reverse">
+      <div class="step-img">
+        <img src="images/step6.jpg">
+      </div>
+      <div class="step-text">
+        <h2><span class="num">6</span>Plant for Health</h2>
+        <p>Add hardy greens like <em>Anubias, Hornwort</em> or floating <em>Duckweed</em>. Plants absorb nitrates and give goldies something to explore.</p>
+      </div>
+    </article>
+
+    <!-- step 7 -->
+    <article class="step">
+      <div class="step-img">
+        <img src="images/step7.jpg">
+      </div>
+      <div class="step-text">
+        <h2><span class="num">7</span>Introduce Your Goldfish!</h2>
+        <p>Float the bag 15 min, add a cup of tank water every 5 min, then net the fish in. Discard store water to keep pathogens out.</p>
+      </div>
+    </article>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script>
+    gsap.utils.toArray('.step').forEach(sec=>{
+      gsap.from(sec,{opacity:0,y:60,duration:.7,scrollTrigger:{trigger:sec,start:"top 80%"}});
+    });
+  </script> 
+
+<script>
+  const hamburger = document.querySelector(".hamburger");
+  const navMenu = document.querySelector(".nav-menu");
+
+  hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+  });
+</script>
+
+</body>
+</html>

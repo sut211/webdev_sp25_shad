@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Goldfish</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/my-goldfish.css">
+
+</head>
+<body>
+  <header>
+    <div class="logo">Goldfish<span style="color: var(--accent-blue);">.</span></div>
+    
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="types.html">Types</a></li>
+        <li><a href="care.html">Guide</a></li>
+        <li><a href="tank.html">Tank</a></li>
+        <li><a href="my-goldfish.html">My Fish</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main class="wrapper">
+
+    <!-- setup form -->
+    <section id="setup" hidden>
+      <h1>Name your new goldfish</h1>
+      <form id="setup-form">
+        <input id="fish-name" type="text" placeholder="e.g. Bubbles" required>
+        <button type="submit">Save</button>
+      </form>
+    </section>
+
+<!-- dash board -->
+<section id="dashboard" hidden>
+    <h1 id="dash-title"></h1>
+  
+    <div class="dash-grid">
+  
+      <!-- card + buttons -->
+      <div class="card">
+        <p><strong>Setup date:</strong> <span id="setup-date"></span></p>
+  
+        <p><strong>Last fed:</strong> <span id="last-fed">—</span></p>
+        <button id="feed-btn">Feed&nbsp;Now</button>
+  
+        <hr>
+  
+        <p><strong>Last water change:</strong> <span id="last-water">—</span></p>
+        <button id="water-btn">Log&nbsp;Water&nbsp;Change</button>
+  
+        <hr>
+  
+        <button id="reset-btn" class="danger">Reset&nbsp;Fish</button>
+  
+        <!-- success tick -->
+        <span id="tick" aria-hidden="true">✓</span>
+      </div>
+  
+      <!-- scrolling history -->
+      <div class="history">
+        <h2>Feeding history</h2>
+        <ul id="feed-log"></ul>
+  
+        <h2 style="margin-top:2rem">Water-change history</h2>
+        <ul id="water-log"></ul>
+      </div>
+  
+    </div>
+  </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="js/my-goldfish.js"></script>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+  
+    hamburger.addEventListener("click", () => {
+      navMenu.classList.toggle("show");
+    });
+  </script>
+  
+</body>
+</html>

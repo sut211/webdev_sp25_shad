@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goldfish Care Guide</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/care.css">
+</head>
+<body>
+
+  <!-- navbar -->
+  <header>
+    <div class="logo">Goldfish<span style="color: var(--accent-blue);">.</span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="types.html">Types</a></li>
+        <li><a href="care.html">Guide</a></li>
+        <li><a href="tank.html">Tank</a></li>
+        <li><a href="my-goldfish.html">My Fish</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+<!-- mosaic -->
+<section class="care-guide" id="care">
+    <h2 class="cg-heading">Goldfish Care Guide</h2>
+  
+    <div class="care-grid">
+      <article class="cg-item w-2 h-2 banner">
+        <h3>Goldfish<br>Care Guide</h3>
+      </article>
+  
+      <!-- feeding -->
+<article class="cg-item">
+    <img src="images/feeding.jpg" class="cg-img">
+
+    <div class="cg-text">
+      <h4>Feeding</h4>
+      <p>Offer small portions 2-3 x day; remove leftovers after 2 min.</p>
+    </div>
+  </article>
+  
+      <!-- water changes-->
+<article class="cg-item">
+    <img src="images/water-change.jpg" class="cg-img">
+  
+    <div class="cg-text">
+      <h4>Water Change</h4>
+      <p>Swap 30% water weekly to keep nitrates low.</p>
+    </div>
+  </article>
+
+
+      <!-- filtration -->
+      <article class="cg-item">
+        <img src="images/filter.jpg" class="cg-img">
+      
+        <div class="cg-text">
+          <h4>Filtration</h4>
+          <p>Turn-over 6-8x tank volume per hr for crystal clear water.</p>
+        </div>
+      </article>
+  
+      <!-- tank size -->
+      <article class="cg-item w-2">
+        <img src="images/tank-space.jpg" class="cg-img">
+
+        <div class="cg-text">
+          <h4>Tank Size</h4>
+          <p>20-30 gal for the first fish + 10 gal each extra.</p>
+        </div>
+      </article>
+  
+      <!-- live plants -->
+      <article class="cg-item">
+        <img src="images/live-plants.jpg" class="cg-img">
+      
+        <div class="cg-text">
+          <h4>Live Plants</h4>
+          <p>Anubias and Hornwort survive nibbles and lower toxins.</p>
+        </div>
+      </article>
+
+      
+      <!-- methylene blue -->
+      <article class="cg-item">
+        <img src="images/blue.jpg" class="cg-img">
+      
+        <div class="cg-text">
+          <h4>Methylene Blue</h4>
+          <p>Your one-stop dip against fungus and parasites.</p>
+        </div>
+      </article>
+  
+
+      <!-- quarantine -->
+      <article class="cg-item">
+        <!-- image layer -->
+        <img src="images/sick.jpg" class="cg-img">
+
+        <div class="cg-text">
+          <h4>Quarantine</h4>
+          <p>Isolate new fish 2 weeks to avoid tank-wide outbreaks.</p>
+        </div>
+      </article>
+  
+      <!-- temp -->
+      <article class="cg-item">
+        <img src="images/temp.jpg" class="cg-img">
+      
+        <div class="cg-text">
+          <h4>Temperature</h4>
+          <p>Ideally 68 - 74 °F (20 - 23 °C) for fancy breeds.</p>
+        </div>
+      </article>
+
+      <!-- aeration -->
+      <article class="cg-item">
+        <img src="images/airstone.jpg" class="cg-img">
+
+        <div class="cg-text">
+          <h4>Aeration</h4>
+          <p>Add an air-stone; goldies gulp more O₂ than most fish.</p>
+        </div>
+      </article>
+
+      <!-- enrichment -->
+      <article class="cg-item h-2">
+        <img src="images/deco.jpg" class="cg-img">
+
+        <div class="cg-text">
+          <h4>Enrichment</h4>
+          <p>Substrate and hiding spots keep curious fish active.</p>
+        </div>
+      </article>
+
+      <!-- test kit -->
+      <article class="cg-item">
+        <img src="images/test.jpg" class="cg-img">
+      
+        <div class="cg-text">
+          <h4>Water Tests</h4>
+          <p>Ammonia and nitrite must read 0 ppm — test weekly.</p>
+        </div>
+      </article>
+
+        <div class="cg-item spacer"></div>
+        <div class="cg-item spacer"></div>
+      
+    </div>
+  </section>
+  
+
+  <!-- gsap -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="js/care-guide.js"></script>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+  
+    hamburger.addEventListener("click", () => {
+      navMenu.classList.toggle("show");
+    });
+  </script>
+</body>
+</html>
